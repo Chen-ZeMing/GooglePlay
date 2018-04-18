@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="StyledIndicators" parent="@style/AppTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+    <!--选项卡自定义样式-->
+    <style name="CustomTabPageIndicator" parent="@style/Theme.AppCompat">
+        <item name="android:background">@color/tab_text_color_normal</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:textColor">@color/tab_text_color_selected</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:divider">@drawable/icon_line</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@color/tab_text_color</item>
+    </style>
+
+
+    <!--->
+
+
+     <!-自定义viewpagerIndicator样式-->
+    <style name="StyledIndicators1" parent="@style/Theme.AppCompat">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator1</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="CustomTabPageIndicator1" parent="@style/Theme.AppCompat">
+        <item name="android:background">@color/tab_text_color_normal</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:textColor">@color/tab_text_color_selected</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:divider">@drawable/icon_line</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text1" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
+
+</resources>

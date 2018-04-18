@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/ll_load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ProgressBar
+        android:layout_marginRight="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar1"
+        android:indeterminateDrawable="@drawable/custom_progress"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9f1e1c1c"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/加载"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_load_error"
+        android:textColor="#9f1e1c1c"
+        android:textSize="20sp"
+        android:text="加载失败,点击重试"
+        />
+</LinearLayout>
